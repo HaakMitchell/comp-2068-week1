@@ -27,6 +27,7 @@
     Create an array that contains 4 people objects.
     Each object must have at least 2 properties.
 */
+
 const people = [
     {
         name: "Mitchell",
@@ -46,8 +47,6 @@ const people = [
     }
 ];
 
-console.log(people[1]);
-
 const[{name: namee, age: agee}] = people;
 
 /*
@@ -59,7 +58,7 @@ const[{name: namee, age: agee}] = people;
     destructured.
 */
 
- const hellomsg = (namee, agee) => {
+ const hellomsg = (name, age) => {
      console.log(`Hello my name is ${namee} and I am ${agee} years old!`);
  }
 
