@@ -47,8 +47,6 @@ const people = [
     }
 ];
 
-const[{name: namee, age: agee}] = people;
-
 /*
   Step 2 (6 points):
     Create an arrow function that accepts
@@ -58,8 +56,8 @@ const[{name: namee, age: agee}] = people;
     destructured.
 */
 
- const hellomsg = (name, age) => {
-     console.log(`Hello my name is ${namee} and I am ${agee} years old!`);
+ const hellomsg = ({name, age}) => {
+     console.log(`Hello my name is ${name} and I am ${age} years old!`);
  }
 
 
